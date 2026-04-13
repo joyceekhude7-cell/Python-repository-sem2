@@ -1,0 +1,22 @@
+class Employee:
+    def __init__(self, name, base_salary, bonus):
+        self.name = name
+        self.base_salary = base_salary
+        self.bonus = bonus
+
+    # Method to calculate total salary
+    def calculate_salary(self):
+        total_salary = self.base_salary + self.bonus
+        return total_salary
+
+    # Display details
+    def display(self):
+        print(f"Employee Name: {self.name}")
+        print(f"Base Salary: {self.base_salary}")
+        print(f"Bonus: {self.bonus}")
+        print(f"Total Salary: {self.calculate_salary()}")
+
+
+# Example usage
+emp = Employee("Arti", 30000, 5000)
+emp.display()
