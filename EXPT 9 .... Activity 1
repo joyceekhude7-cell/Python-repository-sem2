@@ -1,0 +1,22 @@
+import math
+
+def calculate_emi(principal, annual_rate, years):
+    # Convert annual rate to monthly rate
+    monthly_rate = annual_rate / (12 * 100)
+    
+    # Total number of months
+    months = years * 12
+    
+    # EMI formula using math.pow()
+    emi = (principal * monthly_rate * math.pow(1 + monthly_rate, months)) / \
+          (math.pow(1 + monthly_rate, months) - 1)
+    
+    return emi
+
+# Example usage
+P = 500000      # Loan amount
+R = 8.5         # Annual interest rate (%)
+T = 5           # Time in years
+
+emi_value = calculate_emi(P, R, T)
+print("Monthly EMI:", round(emi_value, 2))
