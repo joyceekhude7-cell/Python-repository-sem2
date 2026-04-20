@@ -1,0 +1,14 @@
+from datetime import datetime
+
+def display_today_date():
+    # Get current date and time
+    today = datetime.now()
+    
+    # Format date (e.g., 20 April 2026)
+    formatted_date = today.strftime("%d %B %Y")
+    
+    print("===== Hospital Appointment System =====")
+    print("Today's Date:", formatted_date)
+
+# Call the function
+display_today_date()
