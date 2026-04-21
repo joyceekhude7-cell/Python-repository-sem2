@@ -1,0 +1,4 @@
+set1 = set(map(int, input("Enter element of set:").split()))
+set2 = set(map(int, input("Enetr element of set2:").split()))
+print("Union:", set1 | set2)
+print("Intersection:", set1 & set2)
