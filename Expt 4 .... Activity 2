@@ -1,0 +1,8 @@
+# List of product prices
+prices = [199, 349, 99, 499, 150]
+
+# Calculate total bill
+total_bill = sum(prices)
+
+# Display result
+print("Total Bill:", total_bill)
