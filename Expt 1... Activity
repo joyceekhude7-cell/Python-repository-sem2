@@ -1,0 +1,7 @@
+Name = "Joycee Khude"
+Address = " Tamjainagar Satara"
+contact = "7559160850"
+
+print ("Name",Name)
+print ("Address",Address)
+print ("Contact Number", contact)
