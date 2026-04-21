@@ -1,0 +1,10 @@
+n = int(input("Enter number of elements:"))
+ number = []
+ for i in range(n):
+  num = int(input(f"Enter elements{i + 1}:"))
+  number.append(num)
+ total = sum(number)
+ average = total / n if n > 0 else 0 
+ print("List:"< numbers)
+ print("Sum of element:", total)
+ print("Average od element:",average)
