@@ -1,0 +1,14 @@
+def calculate_emi(principal, annual_rate, years):
+    monthly_rate = annual_rate / (12 * 100)   # Convert annual rate to monthly decimal
+    months = years * 12                       # Total number of months
+    
+    emi = (principal * monthly_rate * (1 + monthly_rate) ** months) / ((1 + monthly_rate) ** months - 1)
+    return emi
+
+# Example usage
+loan_amount = float(input("Enter loan amount: "))
+rate = float(input("Enter annual interest rate (%): "))
+years = int(input("Enter number of years: "))
+
+emi = calculate_emi(loan_amount, rate, years)
+print(f"Your EMI is: {emi:.2f}")
