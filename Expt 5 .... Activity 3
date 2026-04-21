@@ -1,0 +1,19 @@
+
+inventory = {
+    "Apples": 50,
+    "Bananas": 30,
+    "Oranges": 20
+}
+
+
+item = "Bananas"
+new_quantity = 25
+
+
+if item in inventory:
+    inventory[item] += new_quantity   
+else:
+    inventory[item] = new_quantity    
+
+
+print("Updated Inventory:", inventory)
