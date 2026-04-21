@@ -1,0 +1,7 @@
+items = int(input("Enter number of items: "))
+copies = int(input("Enter number of copies per item: "))
+
+for i in range(1, items + 1):        # Outer loop for items
+    for j in range(1, copies + 1):   # Inner loop for copies
+        print(f"Item {i} - Copy {j}")
+    print()  # Blank line after each item
