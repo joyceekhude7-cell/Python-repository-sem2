@@ -1,0 +1,12 @@
+student = []
+student["name"] = "Yashashree"
+student["age"] = 20 
+student["course"] = "Python"
+print("Dictionary after adding element:")
+print(student)
+student["age"]
+print("\nDictionary after updating a value:")
+print(student)
+del student["course"]
+print("\nDictionary after deleting a key - value pair:")
+print(student)
