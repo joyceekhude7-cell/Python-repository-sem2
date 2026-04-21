@@ -1,0 +1,5 @@
+
+class_A = {101, 102, 103, 104, 105}
+class_B = {103, 104, 106, 1
+common_students = class_A.intersection(class_B)
+print("Students present in both classes:", common_students)
