@@ -1,0 +1,19 @@
+# Dictionary storing book name and price
+library = {
+    "Python Basics": 250,
+    "Data Science": 450,
+    "AI Guide": 500
+}
+
+# Book to update
+book_name = "Data Science"
+
+# New price
+new_price = 400
+
+# Update price
+if book_name in library:
+    library[book_name] = new_price
+    print("Updated Library:", library)
+else:
+    print("Book not found")
