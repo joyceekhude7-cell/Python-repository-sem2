@@ -1,0 +1,12 @@
+def split_bill(total_amount, num_people):
+    try:
+        return total_amount / num_people
+    except ZeroDivisionError:
+        return "Error: Number of people cannot be zero."
+
+# Example
+bill = 1000
+people = 0
+
+result = split_bill(bill, people)
+print(result)
