@@ -1,0 +1,24 @@
+def get_valid_age():
+    while True:
+        age_input = input("Enter your age: ").strip()
+        
+        # Check if input is empty
+        if not age_input:
+            print("Age cannot be empty. Please try again.")
+            continue
+        
+        try:
+            age = int(age_input)
+            
+            # Validate range
+            if age < 0 or age > 120:
+                print("Please enter a valid age between 0 and 120.")
+            else:
+                return age
+        
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
+
+# Example usage
+age = get_valid_age()
+print(f"Registration successful. Your age is: {age}")
